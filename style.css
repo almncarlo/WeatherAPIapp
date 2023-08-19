@@ -22,13 +22,19 @@ body {
 #container {
   background-color: white;
   opacity: 90%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
   width: 60vh;
+}
+
+#header {
+  font-size: 7vh;
+  font-weight: 200;
+  margin: 20px;
 }
 
 form > input {
@@ -101,6 +107,11 @@ form > button:hover {
   justify-content: space-around;
   width: 18vh;
   height: 18vh;
+}
+
+.add-info:hover {
+  background-color: rgb(231, 230, 230);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .add-info-sub {
