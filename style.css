@@ -1,12 +1,8 @@
-html {
-  font-family: sans-serif;
-}
-
 body {
+  font-family: sans-serif;
   display: flex;
   justify-content: center;
   background-size: cover;
-  padding: 0;
   margin: 0;
 }
 
