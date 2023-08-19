@@ -1,4 +1,6 @@
-const api_key = "fd680c2b2e864e6f9e1123857231808";
+const weatherapi_key = "fd680c2b2e864e6f9e1123857231808";
+const imgapi_key = "QXlir97Pvx6eDvsD3p4NqWt2e8xlfnHt-NT00pavBnk";
+const bg = document.querySelector("#bg-img");
 const form = document.querySelector("form");
 const loc = document.querySelector("#location");
 const temp = document.querySelector("#temp");
@@ -22,12 +24,21 @@ const handleDisplay = (data) => {
 // fetch weather API data
 async function getWeather(city) {
   const response = await fetch(
-    `https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city}`,
+    `https://api.weatherapi.com/v1/current.json?key=${weatherapi_key}&q=${city}`,
     { mode: "cors" }
   );
   const weatherData = await response.json();
-  console.log(weatherData);
   handleDisplay(weatherData);
+  getBG(`${weatherData.location.name.split().join("-")}`);
+}
+
+async function getBG(loc) {
+  const response = await fetch(
+    `https://api.unsplash.com/search/photos?query=${loc}&per_page=20&client_id=${imgapi_key}`,
+    { mode: "cors" }
+  );
+  const imgData = await response.json();
+  bg.style.backgroundImage = `url(${imgData.results[0].urls.regular})`;
 }
 
 // calls async function when user searches for a location
