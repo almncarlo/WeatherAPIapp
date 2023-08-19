@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WeatherAPI App!</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
-    <form action="#">
-        <input type="text" id="city" placeholder="Quezon City">
+  </head>
+  <body>
+    <div id="container">
+      <form action="#">
+        <input type="text" id="city" placeholder="Search for a city" />
         <button class="submit" type="submit">Search</button>
-    </form>
-    <p class="city"></p>
-    <p class="country"></p>
-    <p class="temp"></p>
-    <p class="condition"></p>
-    
-    
-</body>
+      </form>
+      <p class="main-info" id="location"></p>
+      <p class="main-info" id="temp"></p>
+      <p class="main-info" id="condition"></p>
+      <div class="wrapper">
+        <div class="add-info">
+          <h3 class="add-info-sub">UV INDEX</h3>
+          <p class="info-data" id="uv">99</p>
+        </div>
+        <div class="add-info">
+          <h3 class="add-info-sub">FEELS LIKE</h3>
+          <p class="info-data" id="feels-like">99</p>
+        </div>
+        <div class="add-info">
+          <h3 class="add-info-sub">HUMIDITY</h3>
+          <p class="info-data" id="humidity">99</p>
+        </div>
+        <div class="add-info">
+          <h3 class="add-info-sub">WIND SPEED</h3>
+          <p class="info-data" id="wind-speed">99</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

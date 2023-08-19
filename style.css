@@ -1,0 +1,86 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: lightblue;
+}
+
+#container {
+  background-color: white;
+  opacity: 85%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+form > input {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+form > input:hover {
+  background-color: rgb(231, 230, 230);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+form > button {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+form > button:hover {
+  background-color: aqua;
+}
+
+#location {
+  font-size: 3vh;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+#temp {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 8vh;
+  font-weight: 300;
+}
+
+#condition {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 2vh;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.add-info {
+  padding: 15px;
+  border: 1px solid rgb(231, 230, 230);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.add-info-sub {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.info-data {
+  margin: 0;
+  font-size: 4vh;
+}
