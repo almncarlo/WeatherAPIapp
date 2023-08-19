@@ -3,7 +3,6 @@ html {
 }
 
 body {
-  background-color: lightblue;
   display: flex;
   justify-content: center;
   background-size: cover;
@@ -25,7 +24,6 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 20px;
   width: 60vh;
@@ -33,13 +31,13 @@ body {
 
 #header {
   font-size: 7vh;
-  font-weight: 200;
+  font-weight: 400;
   margin: 20px;
 }
 
 form > input {
   padding: 10px;
-  border: 1px solid rgb(186, 185, 185);
+  border: 1px solid black;
   font-size: 18px;
 }
 
@@ -72,8 +70,7 @@ form > button:hover {
 }
 
 #temp {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
   font-size: 8vh;
   font-weight: 300;
 }
